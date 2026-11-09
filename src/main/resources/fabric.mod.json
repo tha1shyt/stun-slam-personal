@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "stunslam",
+  "version": "${version}",
+  "name": "Stun Slam",
+  "description": "High-performance Axe-to-Mace auto stun slam mod. 100% accurate shield break & smash combo with ToxMaceSwap compatibility.",
+  "authors": [
+    "StunSlam Team"
+  ],
+  "contact": {
+    "homepage": "https://github.com/stunslam/stunslam",
+    "sources": "https://github.com/stunslam/stunslam"
+  },
+  "license": "MIT",
+  "icon": "assets/stunslam/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.stunslam.StunSlamMod"
+    ],
+    "modmenu": [
+      "com.stunslam.gui.StunSlamModMenu"
+    ]
+  },
+  "mixins": [
+    "stunslam.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "minecraft": ">=1.21.1 <=1.21.4",
+    "java": ">=21"
+  },
+  "suggests": {
+    "cloth-config2": ">=15.0.0",
+    "modmenu": ">=11.0.0"
+  }
+}
