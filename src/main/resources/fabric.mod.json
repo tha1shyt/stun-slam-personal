@@ -12,7 +12,6 @@
     "sources": "https://github.com/stunslam/stunslam"
   },
   "license": "MIT",
-  "icon": "assets/stunslam/icon.png",
   "environment": "client",
   "entrypoints": {
     "client": [

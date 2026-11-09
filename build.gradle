@@ -20,6 +20,10 @@ repositories {
         name = "Shedaniel"
         url = "https://maven.shedaniel.me/"
     }
+    maven {
+        name = "Architectury"
+        url = "https://maven.architectury.dev/"
+    }
 }
 
 dependencies {

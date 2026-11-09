@@ -295,9 +295,9 @@ public class StunSlamController {
                     if (enchants != null) {
                         // Check if mace matches combat state (Density when falling, Breach when grounded)
                         boolean hasDensity = enchants.getEnchantments().stream()
-                                .anyMatch(e -> e.getIdAsString().contains("density"));
+                                .anyMatch(e -> e.matchesKey(Enchantments.DENSITY));
                         boolean hasBreach = enchants.getEnchantments().stream()
-                                .anyMatch(e -> e.getIdAsString().contains("breach"));
+                                .anyMatch(e -> e.matchesKey(Enchantments.BREACH));
 
                         if (isFalling && hasDensity) return i;
                         if (!isFalling && hasBreach) return i;
